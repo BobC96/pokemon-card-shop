@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Card Shop – Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Card Haven</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart<span class="cart-count">0</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Legendary Cards</h1>
+      <p>Your journey to build the ultimate collection starts here. Explore rare and unique trading cards curated for enthusiasts.</p>
+      <a href="products.html"><button class="btn-primary">Shop Now</button></a>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Categories Section -->
+    <h2 style="text-align:center; margin-top:3rem;">Shop by Category</h2>
+    <div class="categories">
+      <div class="category-card" onclick="window.location.href='products.html#sealed'">
+        <img src="assets/product1.png" alt="Sealed Products">
+        <h3>Sealed Products</h3>
+        <p>Explore booster packs and boxes to expand your collection.</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='products.html#singles'">
+        <img src="assets/product2.png" alt="Singles">
+        <h3>Singles</h3>
+        <p>Shop individual cards for decks or display.</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='products.html#graded'">
+        <img src="assets/product3.png" alt="Graded Cards">
+        <h3>Graded Cards</h3>
+        <p>Invest in professionally graded collectibles.</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='products.html#accessories'">
+        <img src="assets/product4.png" alt="Accessories">
+        <h3>Accessories</h3>
+        <p>Sleeves, binders, and everything else you need.</p>
+      </div>
+    </div>
+
+    <!-- Featured Products Section -->
+    <h2 style="text-align:center; margin-top:3rem;">Featured Products</h2>
+    <div class="product-grid">
+      <!-- Product Card 1 -->
+      <div class="product-card" data-id="p01" data-name="Dragon's Fury Booster" data-price="49.99" data-category="sealed" data-image="assets/product1.png">
+        <img src="assets/product1.png" alt="Dragon's Fury Booster">
+        <div class="product-card-content">
+          <h4>Dragon's Fury Booster</h4>
+          <p>Unleash the power of fiery dragons with this limited edition booster.</p>
+          <span class="price">$49.99</span>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="product-card" data-id="p02" data-name="Mystic Waters Booster" data-price="42.99" data-category="sealed" data-image="assets/product2.png">
+        <img src="assets/product2.png" alt="Mystic Waters Booster">
+        <div class="product-card-content">
+          <h4>Mystic Waters Booster</h4>
+          <p>Dive into unknown depths with this water‑themed set.</p>
+          <span class="price">$42.99</span>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="product-card" data-id="p03" data-name="Lightning Storm Booster" data-price="44.99" data-category="sealed" data-image="assets/product3.png">
+        <img src="assets/product3.png" alt="Lightning Storm Booster">
+        <div class="product-card-content">
+          <h4>Lightning Storm Booster</h4>
+          <p>Charge up your deck with electrifying new cards.</p>
+          <span class="price">$44.99</span>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="product-card" data-id="p04" data-name="Forest Guardian Booster" data-price="39.99" data-category="sealed" data-image="assets/product4.png">
+        <img src="assets/product4.png" alt="Forest Guardian Booster">
+        <div class="product-card-content">
+          <h4>Forest Guardian Booster</h4>
+          <p>Summon the spirits of the forest and harness their strength.</p>
+          <span class="price">$39.99</span>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content container">
+      <div>
+        <h4>About Us</h4>
+        <p>Card Haven is your premier destination for high‑quality trading cards and collectibles. We’re dedicated to helping you build the ultimate deck or collection with authenticity and care.</p>
+      </div>
+      <div>
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay Connected</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Card Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
